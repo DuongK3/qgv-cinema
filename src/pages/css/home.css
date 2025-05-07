@@ -1,0 +1,69 @@
+.bold-text {
+    font-weight: bold;
+}
+
+.custom-carousel {
+    position: relative;
+    max-width: 85%;
+    height: 650px; /* Đặt chiều cao cố định cho carousel */
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden; /* Đảm bảo chỉ hiển thị phần bên trong */
+    background-color: #f9f9f9; /* Thêm màu nền để dễ kiểm tra */
+}
+
+.custom-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Đảm bảo slide chiếm toàn bộ chiều cao của carousel */
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.custom-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+.custom-slide.prev {
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 0;
+}
+
+.custom-slide-img {
+    width: 100%;
+    height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ slide */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    border-radius: 8px;
+}
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+.custom-next {
+    right: 10px;
+}
+
+
+
