@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 
 const Movie = () => {
-  const movies = [
+  const movies = [ 
     {
       title: 'Peaky Blinders',
       img: '/assets/movies/img/peaky blinders.jpg',
@@ -36,7 +36,7 @@ const Movie = () => {
         label: 'Body Horror Thriller',
         genres: ['Kinh dị', 'Châm biếm xã hội'],
         year: 2024,
-        imdb: null, // IMDb chưa có hoặc chưa công bố chính thức
+        imdb: 7,
       },
     },
     {

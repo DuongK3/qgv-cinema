@@ -5,7 +5,7 @@ function NotFound() {
   return (
     <div className="page-404-container">
       <div className="page-404-box">
-        <h1 className="page-404-title">🚧 Trang Đang Phát Triển 🚧</h1>
+        <h1 className="page-404-title">🚧 Đang Phát Triển 🚧</h1>
         <p className="page-404-message">
           Trang này hiện đang trong giai đoạn phát triển. Mình sẽ sớm hoàn thiện và ra mắt trong thời gian tới!
         </p>
@@ -16,4 +16,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default NotFound; 

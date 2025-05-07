@@ -38,18 +38,7 @@ function Home() {
           ))}
           <button className="custom-prev" onClick={prevSlide}>&#10094;</button>
           <button className="custom-next" onClick={nextSlide}>&#10095;</button>
-          <div className="custom-indicators">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => {
-                  setPrev(current);
-                  setCurrent(index);
-                }}
-                className={index === current ? 'active' : ''}
-              ></button>
-            ))}
-          </div>
+          
         </div>
       </section>
 
@@ -319,7 +308,7 @@ function Home() {
           </div>
         </div>
       </div>
-        </div>
+        </div> 
       </div>
       </section>
     </div>

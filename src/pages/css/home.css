@@ -65,5 +65,176 @@
     right: 10px;
 }
 
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .custom-carousel {
+    max-width: 100%; /* Đặt chiều rộng carousel chiếm toàn bộ màn hình */
+    height: 230px; /* Giảm chiều cao carousel */
+    margin-top: 5px;
+    overflow: hidden; /* Hiển thị đầy đủ hình ảnh, không bị cắt */
+  }
+
+  .custom-slide-img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+    height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao */
+    object-fit: contain; /* Hiển thị đầy đủ hình ảnh mà không bị cắt */
+    border-radius: 4px; /* Giảm bo góc để phù hợp với màn hình nhỏ */
+    
+}
+
+  .custom-prev,
+  .custom-next {
+    font-size: 1.5rem; /* Giảm kích thước nút điều hướng */
+    padding: 0.3rem 0.8rem; /* Giảm padding của nút */
+  }
+
+  .custom-prev {
+    left: 5px; /* Điều chỉnh vị trí nút điều hướng trái */
+  }
+
+  .custom-next {
+    right: 5px; /* Điều chỉnh vị trí nút điều hướng phải */
+  }
+
+  .bold-text {
+    font-size: 2.5rem; /* Giảm kích thước chữ đậm */
+  }
+  
+  /******************SPEC****************/
+
+  #spec .spec_1 {
+    flex-direction: column; /* Hiển thị các mục theo hàng dọc */
+  }
+
+  #spec .spec_1 .col-sm-6 {
+    margin-bottom: 5px; /* Thêm khoảng cách giữa các mục */
+  }
+
+  #spec .spec_1l h1 {
+    font-size: 1.5rem; /* Giảm kích thước chữ số */
+  }
+
+  #spec .spec_1l h6 {
+    font-size: 0.9rem; /* Giảm kích thước chữ mô tả */
+  }
+
+  /******************SERV****************/
+
+  #serv .serv_1 {
+    flex-direction: column; /* Chuyển các mục sang hiển thị theo cột */
+  }
+
+  #serv .serv_1 .col-sm-6 {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục */
+  }
+
+  #serv .serv_1i {
+    padding: 10px; /* Giảm padding để phù hợp với màn hình nhỏ */
+  }
+
+  #serv .serv_1i h5 {
+    font-size: 1rem; /* Giảm kích thước tiêu đề */
+  }
+
+  #serv .serv_1i p {
+    font-size: 0.9rem; /* Giảm kích thước chữ mô tả */
+    text-align: justify;
+  }
+
+  #serv .serv_1i span {
+    font-size: 2.5rem; /* Giảm kích thước biểu tượng hoặc chữ lớn */
+  }
+
+   /******************TESTIM****************/
+
+   .carousel-item {
+    height: auto; /* Đảm bảo chiều cao tự động */
+  }
+  
+  .carousel-inner {
+    height: auto; /* Đảm bảo chiều cao tự động */
+  }
+
+  .p_3 {
+    padding: 10px; /* Giảm padding tổng thể */
+  }
+
+  .award_1 {
+    margin-bottom: 10px; /* Giảm khoảng cách dưới tiêu đề */
+  }
+
+  .testim_1 {
+    gap: 10px; /* Tạo khoảng cách giữa các mục đánh giá */
+  }
+  
+  .testim_1i1 span {
+    font-size: 10px; /* Giảm kích thước sao đánh giá */
+  }
+
+  /* ****************FOOTER******************* */
+
+  #footer .footer_m {
+    padding: 15px; /* Giảm padding tổng thể */
+  }
+
+  #footer .footer_1 {
+    flex-direction: column; /* Chuyển các cột thành hàng dọc */
+    gap: 20px; /* Tạo khoảng cách giữa các phần */
+  }
+
+  #footer .footer_1i {
+    text-align: center; /* Căn giữa nội dung trong từng phần */
+  }
+
+  #footer .footer_1i img {
+    margin-bottom: 10px; /* Thêm khoảng cách dưới logo */
+  }
+
+  #footer .footer_1i h5 {
+    font-size: 14px; /* Giảm kích thước tiêu đề */
+    margin-bottom: 10px; /* Giảm khoảng cách dưới tiêu đề */
+  }
+
+  #footer .footer_1i p {
+    font-size: 12px; /* Giảm kích thước chữ mô tả */
+    line-height: 1.5; /* Điều chỉnh khoảng cách dòng */
+  }
+
+  #footer .footer_1i h6 {
+    font-size: 12px; /* Giảm kích thước chữ liên kết */
+    margin-bottom: 8px; /* Giảm khoảng cách giữa các liên kết */
+  }
+
+  #footer .footer_1i ul.social-network {
+    justify-content: center; /* Căn giữa các biểu tượng mạng xã hội */
+    gap: 10px; /* Tạo khoảng cách giữa các biểu tượng */
+  }
+
+  #footer .footer_2 {
+    margin-top: 20px; /* Thêm khoảng cách trên */
+    padding-top: 10px; /* Giảm padding trên */
+  }
+
+  #footer .footer_2 p {
+    font-size: 12px; /* Giảm kích thước chữ bản quyền */
+    line-height: 1.4; /* Điều chỉnh khoảng cách dòng */
+  }
+
+  #footer .footer_1ism h6 {
+    display: block; /* Đảm bảo mỗi mục chiếm toàn bộ chiều rộng */
+    width: 100%; /* Chiếm toàn bộ chiều rộng container */
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục */
+  }
+
+  #footer .footer_1ism h6 a {
+    font-size: 12px; /* Giảm kích thước chữ để phù hợp với màn hình nhỏ */
+    text-align: left; /* Căn trái nội dung liên kết */
+  }
+
+  #footer .footer_1ism h6 i {
+    margin-right: 5px; /* Tạo khoảng cách giữa biểu tượng và nội dung */
+  }
+} 
+
 
 

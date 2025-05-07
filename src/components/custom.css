@@ -59,7 +59,65 @@ body {
   
   
   /* ==========================
-     Footer 
+     Giao diện điện thoại di động
   ========================== */
 
+  @media (max-width: 768px) {
+    #header {
+      padding: 10px 0; /* Giảm padding của header */
+    }
   
+    .navbar {
+      padding: 0.5rem 0; /* Giảm padding của navbar */
+    }
+  
+    .navbar-brand {
+      font-size: 1.2rem; /* Giảm kích thước logo */
+    }
+  
+    .navbar-toggler {
+      border: none; /* Loại bỏ viền nút toggle */
+      background-color: rgb(255, 255, 255); /* Đổi màu nền nút toggle */
+      padding: 5px 10px; /* Giảm padding của nút toggle */
+    }
+  
+    .navbar-toggler-icon {
+      font-size: 1.2rem; /* Tăng kích thước biểu tượng toggle */
+    }
+  
+    .navbar-nav {
+      flex-direction: column; /* Hiển thị các mục theo hàng dọc */
+      align-items: flex-start; /* Căn các mục về bên trái */
+      padding: 5px; /* Thêm khoảng cách bên trong */
+      padding-bottom: 5px;
+    }
+  
+    .nav-item {
+      margin-bottom: -10px; /* Thêm khoảng cách giữa các mục */
+    }
+  
+    .nav-link {
+      font-size: 0.9rem; /* Giảm kích thước chữ */
+      padding: 8px 15px; /* Giảm padding của các liên kết */
+    }
+  
+    .dropdown-menu {
+      position: static; /* Đảm bảo dropdown hiển thị đúng vị trí */
+      width: 100%; /* Đặt dropdown chiếm toàn bộ chiều rộng */
+      margin-top: 5px; /* Thêm khoảng cách giữa dropdown và mục cha */
+      border: none; /* Loại bỏ viền */
+      box-shadow: none; /* Loại bỏ bóng đổ */
+      max-height: 150px; /* Giới hạn chiều cao tối đa */
+      overflow-y: auto; /* Thêm thanh cuộn nếu nội dung vượt quá chiều cao */
+    }
+    
+    .dropdown-item {
+      font-size: 0.5rem; /* Giảm kích thước chữ trong dropdown */
+      padding: 5px 5px; /* Giảm padding của các mục trong dropdown */
+    }
+    
+    .dropdown-item:hover {
+      background-color: #FFD6A5; /* Thêm hiệu ứng hover */
+      color: #FF6B00; /* Đổi màu chữ khi hover */
+    }
+  }

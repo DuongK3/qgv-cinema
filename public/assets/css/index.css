@@ -45,7 +45,7 @@ background-image: url(../img/2.jpg);
 
 @media screen and (max-width : 767px){
 .center_home img{
-min-height:380px; 
+min-height:0px; 
  }
 .carousel-caption{
 padding:15px!important;

@@ -481,166 +481,6 @@ color: #aa2020;
  }
 /*********************footer_end****************/
 
-
-
-@media screen and (max-width : 767px){
-.navbar-collapse{
-max-height:300px;
-overflow-y:scroll; 
-border-top:1px solid #201f1f;
-margin-top:15px;
- }
-#header .nav-link{
-font-size:28px!important;
-border-bottom:1px solid #201f1f;
-padding-top:10px;
-padding-bottom:10px;
-border-radius:0!important;
-border-right:none;
- }
-
-.navbar .navbar-toggler{
-box-shadow:none!important;
-background:#fafafa;
-border:none;
-border-radius:0;
-margin-top:0;
- }
-#header .drop_1{
-margin-top:0!important;
-min-width:100%; 
- }
-#header .drop_1 a{
-font-size:24px; 
- }
-.navbar{
-padding-top:10px!important;
-padding-bottom:10px!important;
-padding-left:0!important;
-padding-right:0!important;
-width:100%;
-border-radius:0;
-background-color: rgba(0,0,0,1)!important;
- }
-
-.sticky .drop_1{
-margin-top:0!important; 
- }
-.line{
-margin-left:auto;
-margin-right:auto; 
- }
-.line_1{
-margin-left:auto;
-margin-right:auto; 
- }
-
-.pages ul li{
-margin-top:5px;
-margin-bottom:5px; 
- }
-
-.center_sm{
-text-align:center!important; 
- }
-.center_left{
-text-align:left!important; 
- }
-#top{
-display:none; 
- }
-.font_60{
-font-size:45px; 
- }
-.font_50{
-font-size:36px; 
- }
-.about_h1l{
-text-align:center;
-margin-bottom:15px; 
- }
-.about_h1l p{
-text-align:left;
- }
-.award_1  p{
-text-align:left; 
- }
-.award_1  br{
-display:none;
- }
-.serv_1i {
-margin-top:8px; 
-margin-bottom:8px; 
- }
-.team_h1i{
-text-align:center;
-margin-bottom:8px; 
- }
-.team_h1i p{
-text-align:left; 
- }
-.team_1m {
-margin-top:8px; 
-margin-bottom:8px; 
- }
-.gallery_2l{
-text-align:center; 
- }
-.gallery_2l br{
-display:none;
- }
-.gallery_2r{
-margin-top:15px!important;
-text-align:center;
- }
-.testim_1i1 {
-margin-top:8px; 
-margin-bottom:8px; 
- }
-.cont_1l{
-text-align:center;
-margin-bottom:15px; 
- }
-.cont_1ril{
-margin-top:10px;
-text-align:center; 
- }
-.footer_1i{
-margin-top:8px; 
-margin-bottom:8px;  
- }
-.footer_1i h3{
-text-align:center; 
- }
-.footer_1i h5{
-text-align:center; 
- }
-.footer_1i ul{
-text-align:center; 
- }
-.footer_1ism h6{
-margin-top:10px!important; 
- }
-.footer_2 {
-text-align:left!important; 
- }
-.award_2i {
-margin-top:8px;
-margin-bottom:8px;  
- }
-.skill_1r {
-margin-top:15px; 
- }
-.skill_1r h1{
-text-align:center; 
- }
-.skill_1r h5{
-text-align:center; 
- }
- }
-@media (min-width:576px) and (max-width:767px) {
-
- }
 @media (min-width:768px) and (max-width:991px) {
 .navbar-expand-md {
 flex-wrap:wrap!important;
@@ -694,6 +534,8 @@ font-size:14px;
 .footer_1i ul li a i{
 line-height: 30px;
 }
+
+
  }
 @media (min-width:871px) and (max-width:991px) {
 #header .nav-link {
@@ -715,3 +557,44 @@ right:0!important;
 
  }
 
+ @media (max-width: 768px) {
+  #about_h {
+    padding: 15px 10px; /* Giảm padding để phù hợp với màn hình nhỏ */
+  }
+
+  .about_h1 {
+    display: flex;
+    flex-direction: column; /* Hiển thị nội dung và ảnh theo hàng dọc */
+    align-items: center; /* Căn giữa nội dung */
+    text-align: center; /* Căn giữa chữ */
+  }
+
+  .about_h1 .col-md-6 {
+    width: 100%; /* Mỗi cột chiếm toàn bộ chiều rộng */
+    margin-bottom: 15px; /* Thêm khoảng cách giữa các cột */
+  }
+
+  .about_h1l h1 {
+    font-size: 1.2rem; /* Giảm kích thước tiêu đề */
+    margin-bottom: 10px;
+  }
+
+  .about_h1l p {
+    font-size: 0.9rem; /* Giảm kích thước chữ */
+    line-height: 1.4; /* Tăng khoảng cách dòng để dễ đọc hơn */
+    text-align: justify;
+  }
+
+  .about_h1l h6 a {
+    font-size: 0.9rem; /* Giảm kích thước nút */
+    padding: 8px 20px; /* Giảm padding của nút */
+  }
+
+  .about_h1r img {
+    border-radius: 8px; /* Giảm bo góc hình ảnh */
+    max-width: 90%; /* Đảm bảo hình ảnh không vượt quá chiều rộng màn hình */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị méo */
+  }
+
+  
+}

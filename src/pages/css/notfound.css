@@ -63,3 +63,49 @@
       transform: translateY(0);
     }
   }
+
+  /* Giao diện điện thoại dọc */
+
+  @media (max-width: 768px) {
+    .page-404-container {
+      padding: 20px; /* Thêm padding để nội dung không sát mép màn hình */
+      text-align: center; /* Căn giữa nội dung */
+    }
+  
+    .page-404-box {
+      max-width: 100%; /* Đảm bảo hộp nội dung chiếm toàn bộ chiều rộng */
+      margin: 0 auto; /* Căn giữa hộp nội dung */
+    }
+  
+    .page-404-title {
+      font-size: 18px; /* Giảm kích thước tiêu đề */
+      margin-bottom: 15px; /* Thêm khoảng cách dưới tiêu đề */
+    }
+  
+    .page-404-message {
+      font-size: 12px; /* Giảm kích thước chữ mô tả */
+      line-height: 1.6; /* Điều chỉnh khoảng cách dòng */
+      margin-bottom: 10px; /* Thêm khoảng cách dưới mô tả */
+      text-align: center; /* Căn giữa chữ mô tả */
+    }
+  
+    .page-404-submessage {
+      font-size: 12px; /* Giảm kích thước chữ phụ */
+      margin-bottom: 20px; /* Thêm khoảng cách dưới chữ phụ */
+    }
+  
+    .page-404-button {
+      display: inline-block; /* Hiển thị nút như một khối nội tuyến */
+      font-size: 14px; /* Giảm kích thước chữ trên nút */
+      padding: 10px 20px; /* Giảm padding của nút */
+      background-color: #ff6b6b; /* Màu nền nút */
+      color: white; /* Màu chữ */
+      text-decoration: none; /* Loại bỏ gạch chân */
+      border-radius: 5px; /* Bo góc nút */
+      transition: background-color 0.3s ease; /* Hiệu ứng hover */
+    }
+  
+    .page-404-button:hover {
+      background-color: #ff4c4c; /* Màu nền khi hover */
+    }
+  }

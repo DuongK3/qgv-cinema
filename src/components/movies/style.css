@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 85%;
     margin: auto;
-    min-height: 100vh; /* dùng min-height thay vì height */
+    min-height: 70vh;
     font-family: 'Segoe UI', sans-serif;
     color: white;
     overflow-x: hidden;
@@ -28,8 +28,6 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
   }
   
@@ -46,13 +44,14 @@
   .movie-content {
     position: relative;
     z-index: 2;
-    padding: 70px 80px;
-    max-width: 700px;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+    
   }
   
   .movie-title {
     font-size: 60px;
-    font-weight: 800;
     margin-bottom: 20px;
   }
   
@@ -60,6 +59,8 @@
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
+    width: 50%;
+    text-align: justify;
   }
   
   .movie-meta {
@@ -192,8 +193,136 @@
     color: black;
   }
 
+  @media (max-width: 768px) {
+    .movie-hero {
+      min-height: 40vh; /* Giữ chiều cao tối thiểu */
+      max-height: 50vh; /* Giữ chiều cao tối đa */
+      overflow: hidden; /* Ẩn phần dư thừa */
+      display: flex; /* Sử dụng Flexbox để sắp xếp nội dung */
+      flex-direction: column; /* Hiển thị nội dung theo cột */
+      justify-content: space-between; /* Tạo khoảng cách hợp lý giữa các phần */
+      padding: 10px; /* Giảm padding tổng thể */
+    }
   
-
-
+    .movie-content {
+      display: flex; /* Sử dụng Flexbox để sắp xếp meta và nút */
+      flex-direction: column; /* Hiển thị các phần theo cột */
+      justify-content: space-between; /* Tạo khoảng cách hợp lý */
+      align-items: stretch; /* Đảm bảo các phần tử chiếm đủ chiều rộng */
+      gap: 10px; /* Tạo khoảng cách giữa các phần */
+    }
   
+    .movie-title {
+      font-size: 15px; /* Giảm kích thước tiêu đề */
+      text-align: center; /* Căn giữa tiêu đề */
+      margin-bottom: 1px; /* Giảm khoảng cách dưới tiêu đề */
+    }
+  
+    .movie-description {
+      font-size: 8px; /* Giảm kích thước chữ mô tả */
+      line-height: 1.4; /* Điều chỉnh khoảng cách dòng */
+      text-align: justify; /* Căn đều văn bản */
+      margin-bottom: 5px; /* Giảm khoảng cách dưới */
+      max-height: 30%; /* Giới hạn chiều cao mô tả */
+      overflow: hidden; /* Ẩn phần dư thừa */
+      width: 100%;
+    }
+
+    .meta-label {
+      display: none; /* Ẩn meta.label */
+    }
+
+    .meta-year {
+      display: none;
+    }
+    .meta-score {
+      font-size: 8px; /* Giảm kích thước chữ */
+      padding: 2px 4px; /* Giảm padding nếu có */
+      color: #ffffff; /* Đặt màu chữ (nếu cần) */
+    }
+
+    .meta-badge.yellow {
+      font-size: 8px; /* Giảm kích thước chữ của badge IMDb */
+      padding: 2px 4px; /* Giảm padding của badge */
+    }
+  
+    .movie-meta {
+      display: flex; /* Sử dụng Flexbox để sắp xếp */
+      flex-wrap: wrap; /* Cho phép các mục xuống dòng */
+      gap: 3px; /* Giảm khoảng cách giữa các mục */
+      font-size: 8px; /* Giảm kích thước chữ */
+      justify-content: flex-start; /* Căn trái các mục meta */
+      align-items: center; /* Căn giữa theo chiều dọc */
+      width: 100%; /* Meta chiếm toàn bộ chiều rộng */
+      margin-bottom: 5px; /* Giảm khoảng cách dưới */
+    }
+  
+    .meta-badge {
+      padding: 2px 5px; /* Giảm padding của các badge */
+      font-size: 8px; /* Giảm kích thước chữ trong badge */
+    }
+  
+    .movie-buttons {
+      display: flex; /* Sử dụng Flexbox để sắp xếp */
+      flex-direction: row; /* Hiển thị các nút theo hàng ngang */
+      justify-content: space-between; /* Tạo khoảng cách giữa các nút */
+      align-items: center; /* Căn giữa theo chiều dọc */
+      gap: 5px; /* Tạo khoảng cách giữa các nút */
+      width: 100%; /* Nút chiếm toàn bộ chiều rộng */
+      margin-top: 0; /* Giảm khoảng cách trên */
+    }
+  
+    .btn {
+      font-size: 10px; /* Giảm kích thước chữ trên nút */
+      padding: 5px 10px; /* Giảm padding của nút */
+      flex: 1; /* Đảm bảo các nút có kích thước bằng nhau */
+      text-align: center; /* Căn giữa nội dung nút */
+    }
+  
+    .popular-section {
+      padding: 5px; /* Giảm padding tổng thể */
+    }
+  
+    .popular-title {
+      font-size: 10px; /* Giảm kích thước tiêu đề */
+      margin-bottom: 5px; /* Giảm khoảng cách dưới tiêu đề */
+      text-align: center; /* Căn giữa tiêu đề */
+    }
+  
+    .popular-list {
+      gap: 5px; /* Giảm khoảng cách giữa các mục */
+      padding-bottom: 5px; /* Giảm padding dưới */
+    }
+  
+    .popular-item {
+      min-width: 80px; /* Giảm chiều rộng tối thiểu của mục */
+      font-size: 5px; /* Giảm kích thước chữ */
+    }
+  
+    .popular-item img {
+      height: 70px; /* Giảm chiều cao hình ảnh */
+      width: 70%;
+      border-radius: 5px; /* Giảm bo góc */
+    }
+  
+    .carousel-inner {
+      height: 50px; /* Giảm chiều cao carousel */
+    }
+  
+    .carousel-item img {
+      height: 100%; /* Đảm bảo hình ảnh lấp đầy carousel */
+      object-fit: cover; /* Giữ tỷ lệ hình ảnh */
+    }
+
+    .popular-item p {
+      font-size: 10px; /* Giảm kích thước chữ */
+      text-align: center; /* Căn giữa tên phim */
+      margin-top: 5px; /* Thêm khoảng cách trên */
+      margin-bottom: 0; /* Giảm khoảng cách dưới */
+      color: #ffffff; /* Đặt màu chữ (nếu cần) */
+      overflow: hidden; /* Ẩn phần chữ dư thừa */
+      text-overflow: ellipsis; /* Thêm dấu "..." nếu tên phim quá dài */
+      white-space: nowrap; /* Không cho phép xuống dòng */
+    }
+  }
   
