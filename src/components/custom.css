@@ -59,7 +59,7 @@ body {
   
   
   /* ==========================
-     Giao diện điện thoại di động
+     Giao diện thanh navbar điện thoại di động dọc 768px
   ========================== */
 
   @media (max-width: 768px) {
@@ -116,6 +116,45 @@ body {
       padding: 5px 5px; /* Giảm padding của các mục trong dropdown */
     }
     
+    .dropdown-item:hover {
+      background-color: #FFD6A5; /* Thêm hiệu ứng hover */
+      color: #FF6B00; /* Đổi màu chữ khi hover */
+    }
+  }
+
+  /* ==========================
+     Giao diện thanh navbar màn hình PC 2K 2560px
+  ========================== */
+
+  @media (min-width: 2560px) {
+    #header {
+      padding: 20px 0; /* Tăng padding của header */
+    }
+  
+    .navbar {
+      padding: 1.5rem 0; /* Tăng padding của navbar */
+    }
+  
+    .navbar-brand {
+      font-size: 2rem; /* Tăng kích thước logo */
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 1.2rem; /* Tăng kích thước chữ */
+      padding: 1rem 1.5rem; /* Tăng padding của các liên kết */
+    }
+  
+    .dropdown-menu {
+      max-height: none; /* Bỏ giới hạn chiều cao tối đa */
+      width: auto; /* Đặt chiều rộng tự động */
+      margin-top: 10px; /* Thêm khoảng cách giữa dropdown và mục cha */
+    }
+  
+    .dropdown-item {
+      font-size: 1rem; /* Tăng kích thước chữ trong dropdown */
+      padding: 10px 15px; /* Tăng padding của các mục trong dropdown */
+    }
+  
     .dropdown-item:hover {
       background-color: #FFD6A5; /* Thêm hiệu ứng hover */
       color: #FF6B00; /* Đổi màu chữ khi hover */

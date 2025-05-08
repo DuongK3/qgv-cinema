@@ -173,8 +173,8 @@ const Movie = () => {
       <div className="popular-section">
         <h2 className="popular-title">Danh Sách Phim Có Restream</h2>
         <div className="popular-list">
-          {movies.map((movie, index) => (
-            <div
+          {movies.map((movie, index) => ( 
+            <div 
               key={index}
               className="popular-item"
               onClick={() => handleMovieClick(movie)}

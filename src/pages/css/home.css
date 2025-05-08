@@ -65,7 +65,9 @@
     right: 10px;
 }
 
-/* Responsive styles for mobile devices */
+/* ==========================
+     Giao diện carousel banner màn hình điện thoại dọc 768px
+  ========================== */
 @media (max-width: 768px) {
   .custom-carousel {
     max-width: 100%; /* Đặt chiều rộng carousel chiếm toàn bộ màn hình */
@@ -78,9 +80,8 @@
     width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
     height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao */
     object-fit: contain; /* Hiển thị đầy đủ hình ảnh mà không bị cắt */
-    border-radius: 4px; /* Giảm bo góc để phù hợp với màn hình nhỏ */
-    
-}
+    border-radius: 4px; /* Giảm bo góc để phù hợp với màn hình nhỏ */    
+  }
 
   .custom-prev,
   .custom-next {
@@ -236,6 +237,369 @@
     margin-right: 5px; /* Tạo khoảng cách giữa biểu tượng và nội dung */
   }
 } 
+
+  /* ==========================
+     Giao diện carousel banner màn hình PC 2K 2560px
+  ========================== */
+
+@media (min-width: 2560px) {
+                /*carousel banner*/
+  .custom-carousel {
+    position: relative;
+    max-width: 85%;
+    height: 80vh; 
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden; /* Đảm bảo chỉ hiển thị phần bên trong */
+    background-color: #f9f9f9; /* Thêm màu nền để dễ kiểm tra */
+  }
+
+  .custom-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Đảm bảo slide chiếm toàn bộ chiều cao của carousel */
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all 0.5s ease-in-out;
+      z-index: 0;
+  }
+
+  .custom-slide.active {
+      opacity: 1;
+      transform: translateX(0);
+      z-index: 1;
+  }
+
+  .custom-slide.prev {
+      opacity: 0;
+      transform: translateX(-100%);
+      z-index: 0;
+  }
+
+  .custom-slide-img {
+      width: 100%;
+      height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ slide */
+      object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+      border-radius: 8px;
+  }
+
+  .custom-prev,
+  .custom-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      background: rgba(0, 0, 0, 0.2);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      z-index: 2;
+  }
+
+  .custom-prev {
+      left: 10px;
+  }
+
+  .custom-next {
+      right: 10px;
+  }
+
+              /* about_h */
+  #about_h {
+    padding: 50px 0; /* Loại bỏ padding hai bên để nội dung kéo rộng hơn */
+    max-width: 100%; /* Đảm bảo nội dung chiếm toàn bộ chiều ngang */
+    width: 100%; /* Kéo rộng container ra toàn bộ chiều ngang */
+    margin: 0 auto; /* Căn giữa nội dung */
+  }
+
+  .about_h1 {
+    flex-direction: row; /* Hiển thị nội dung và ảnh theo hàng ngang */
+    align-items: flex-start; /* Căn chỉnh nội dung theo chiều dọc */
+    text-align: left; /* Căn trái chữ */
+    width: 150%; /* Kéo rộng toàn bộ chiều ngang */
+    margin: 0 auto 0 -25%; /* Căn giữa nội dung */
+  }
+
+  .about_h1 .col-md-6 {
+    width: 50%; /* Mỗi cột chiếm 50% chiều ngang */
+  }
+
+  .about_h1l h5 {
+    font-size: 2rem; /* Tăng kích thước chữ */
+    font-weight: bold; /* (Tùy chọn) Làm chữ đậm hơn */
+    margin-bottom: 20px; /* (Tùy chọn) Tăng khoảng cách dưới tiêu đề */
+  }
+
+  .about_h1l h1 {
+    font-size: 4rem; /* Tăng kích thước tiêu đề */
+    margin-bottom: 40px; /* Tăng khoảng cách dưới tiêu đề */
+  }
+
+  .about_h1l p {
+    font-size: 1.8rem; /* Tăng kích thước chữ */
+    line-height: 2.2; /* Tăng khoảng cách dòng để dễ đọc hơn */
+    text-align: justify;
+  }
+
+  .about_h1l h6 a {
+    font-size: 1.5rem; /* Tăng kích thước nút */
+    padding: 20px 50px; /* Tăng padding của nút */
+  }
+
+  .about_h1r img {
+    border-radius: 12px; /* Tăng bo góc hình ảnh */
+    max-width: 90%; /* Kéo rộng hình ảnh ra toàn bộ chiều rộng cột */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị méo */
+    margin-top: 15%; /* Thêm khoảng cách trên hình ảnh */
+    margin-left: 10%; /* Thêm khoảng cách bên trái hình ảnh */
+  }
+
+  /******************SPEC****************/
+
+  #spec .spec_1 {
+    flex-direction: row; /* Hiển thị các mục theo hàng ngang */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các mục */
+    gap: 25px; /* Tăng khoảng cách giữa các mục */
+    padding: 0 -20%; /* Giảm padding hai bên để nội dung kéo rộng hơn */
+  }
+
+  #spec .spec_1 .col-sm-6 {
+    margin-bottom: 20px; /* Tăng khoảng cách giữa các mục */
+    width: 22%; /* Mỗi mục chiếm 22% chiều ngang */
+  }
+
+  #spec .spec_1l h1 {
+    font-size: 4rem; /* Tăng kích thước chữ tiêu đề */
+    font-weight: bold; /* Làm chữ đậm hơn */
+    margin-bottom: 15px; /* Tăng khoảng cách dưới tiêu đề */
+    text-align: center; /* Căn giữa chữ tiêu đề */
+  }
+
+  #spec .spec_1l h6 {
+    font-size: 2rem; /* Tăng kích thước chữ mô tả */
+    line-height: 1.8; /* Tăng khoảng cách dòng để dễ đọc hơn */
+    text-align: center; /* Căn chỉnh chữ mô tả */
+  }
+  
+  /******************SERV****************/
+
+  .col-md-12 h5 {
+    font-size: 2.5rem; /* Tăng kích thước chữ tiêu đề nhỏ */
+    font-weight: bold; /* Làm chữ đậm hơn */
+    margin-bottom: 15px; /* Tăng khoảng cách dưới tiêu đề */
+  }
+
+  .col-md-12 h1 {
+    font-size: 4rem; /* Tăng kích thước chữ tiêu đề lớn */
+    font-weight: bold; /* Làm chữ đậm hơn */
+    margin-bottom: 20px; /* Tăng khoảng cách dưới tiêu đề */
+  }
+
+  .col-md-12 p {
+    font-size: 1.8rem; /* Tăng kích thước chữ mô tả */
+    line-height: 2; /* Tăng khoảng cách dòng để dễ đọc hơn */
+    text-align: center; /* Căn chỉnh chữ mô tả */
+    width: 150%;
+    margin: 0 auto 0 -25%; /* Căn giữa nội dung */
+  }
+
+  #serv .serv_1 {
+    flex-wrap: wrap; /* Cho phép các mục tự động xuống dòng */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các mục */
+    gap: 40px; /* Tăng khoảng cách giữa các mục */
+    padding: 0px -5%; /* Thêm khoảng cách hai bên */
+    width: 150%; /* Kéo rộng toàn bộ chiều ngang */
+    margin: 0 auto 0 -25%; /* Căn giữa nội dung */
+  }
+
+  #serv .serv_1 .col-sm-6 {
+    margin-bottom: 30px; /* Tăng khoảng cách giữa các mục theo chiều dọc */
+    width: 22%; /* Mỗi mục chiếm 22% chiều ngang để 4 mục vừa 1 dòng */
+  }
+
+  #serv .serv_1i {
+    padding: 20px; /* Tăng padding để nội dung thoáng hơn */
+    border: none; /* Bỏ viền của các mục */
+    box-shadow: none; /* Bỏ hiệu ứng đổ bóng */
+  }
+
+  #serv .serv_1i h5 {
+    font-size: 2rem; /* Tăng kích thước tiêu đề */
+    font-weight: bold; /* Làm chữ đậm hơn */
+    margin-bottom: 15px; /* Tăng khoảng cách dưới tiêu đề */
+  }
+
+  #serv .serv_1i p {
+    font-size: 1.5rem; /* Tăng kích thước chữ mô tả */
+    line-height: 2; /* Tăng khoảng cách dòng để dễ đọc hơn */
+    text-align: justify; /* Căn chỉnh chữ mô tả */
+  }
+
+  #serv .serv_1i span {
+    font-size: 3rem; /* Tăng kích thước biểu tượng hoặc chữ lớn */
+    display: block; /* Đảm bảo biểu tượng nằm riêng một dòng */
+    margin-bottom: 10px; /* Tăng khoảng cách dưới biểu tượng */
+  }
+
+  /*******************TESTIM****************/
+
+  .testim_1 {
+    gap: 30px; /* Tăng khoảng cách giữa các mục đánh giá */
+    padding: 20px 50px; /* Thêm khoảng cách hai bên */
+    width: 170%; /* Kéo rộng toàn bộ chiều ngang */
+    margin: 0 auto 0 -35%; /* Căn giữa nội dung */
+  }
+
+  .col-md-3 {
+    width: 22%; /* Mỗi mục chiếm 22% chiều ngang */
+    margin-bottom: 30px; /* Tăng khoảng cách dưới mỗi mục */
+  }
+
+  .testim_1i1 span {
+    font-size: 30px; /* Tăng kích thước sao đánh giá */
+    margin-right: 5px; /* Thêm khoảng cách giữa các sao */
+  }
+
+  .testim_1i {
+    padding: 20px; /* Tăng padding để nội dung thoáng hơn */
+    border-radius: 10px; /* Thêm bo góc cho các mục */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+  }
+
+  .testim_1i h5 {
+    font-size: 2.5rem; /* Tăng kích thước tiêu đề */
+    font-weight: bold; /* Làm chữ đậm hơn */
+    margin-bottom: 15px; /* Tăng khoảng cách dưới tiêu đề */
+  }
+
+  .testim_1i h6 {
+    font-size: 1.8rem; /* Tăng kích thước chữ mô tả */
+    margin-top: -40px;
+  }
+
+  .testim_1i p {
+    font-size: 1.8rem; /* Tăng kích thước chữ mô tả */
+    line-height: 2; /* Tăng khoảng cách dòng để dễ đọc hơn */
+    text-align: justify; /* Căn chỉnh chữ mô tả */
+  }
+
+  .testim_1i img {
+    width: 100px; /* Tăng kích thước hình ảnh đại diện */
+    height: 100px; /* Đảm bảo hình ảnh vuông */
+    border-radius: 50%; /* Làm hình ảnh tròn */
+    margin-bottom: 15px; /* Thêm khoảng cách dưới hình ảnh */
+  }
+
+  /* ****************FOOTER******************* */
+
+  #footer .footer_m {
+    padding: 30px; /* Tăng padding tổng thể để nội dung thoáng hơn */
+    
+  }
+
+  #footer .footer_1 {
+    flex-direction: row; /* Hiển thị các cột theo hàng ngang */
+    gap: 40px; /* Tăng khoảng cách giữa các mục */
+    width: 150%; /* Kéo rộng toàn bộ chiều ngang */
+    margin: 0 auto 0 -25%; /* Căn giữa nội dung */
+  }
+
+  #footer .footer_1i {
+    text-align: left; /* Căn trái nội dung trong từng phần */
+    
+  }
+
+  #footer .footer_1i img {
+    margin-bottom: 20px; /* Tăng khoảng cách dưới logo */
+    max-width: 200px; /* Tăng kích thước logo */
+  }
+
+  #footer .footer_1i h5 {
+    font-size: 2rem; /* Tăng kích thước tiêu đề */
+    margin-bottom: 20px; /* Tăng khoảng cách dưới tiêu đề */
+  }
+
+  #footer .footer_1i p {
+    font-size: 1.5rem; /* Tăng kích thước chữ mô tả */
+    line-height: 2; /* Tăng khoảng cách dòng */
+  }
+
+  #footer .footer_1i h6 {
+    font-size: 1.5rem; /* Tăng kích thước chữ liên kết */
+    margin-bottom: 15px; /* Tăng khoảng cách giữa các liên kết */
+  }
+
+  #footer .footer_1i ul.social-network {
+    justify-content: flex-start; /* Căn trái các biểu tượng mạng xã hội */
+    gap: 20px; /* Tăng khoảng cách giữa các biểu tượng */
+    
+  }
+
+  #footer .footer_1i ul.social-network li a {
+    font-size: 2.5rem; /* Tăng kích thước biểu tượng */
+    width: 60px; /* Tăng chiều rộng của biểu tượng */
+    height: 60px; /* Tăng chiều cao của biểu tượng */
+    display: flex; /* Đảm bảo biểu tượng căn giữa */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    border-radius: 50%; /* Làm biểu tượng tròn */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Thêm hiệu ứng khi hover */
+}
+
+/* Facebook */
+#footer .footer_1i ul.social-network li a.facebook {
+    background-color: #3b5998; /* Màu xanh Facebook */
+    color: white; /* Màu biểu tượng */
+}
+
+#footer .footer_1i ul.social-network li a.facebook:hover {
+    background-color: #2d4373; /* Màu xanh đậm hơn khi hover */
+    transform: scale(1.2); /* Phóng to biểu tượng khi hover */
+}
+
+/* Google */
+#footer .footer_1i ul.social-network li a.google {
+    background-color: #db4437; /* Màu đỏ Google */
+    color: white; /* Màu biểu tượng */
+}
+
+#footer .footer_1i ul.social-network li a.google:hover {
+    background-color: #c23321; /* Màu đỏ đậm hơn khi hover */
+    transform: scale(1.2); /* Phóng to biểu tượng khi hover */
+}
+
+  #footer .footer_2 {
+    margin-top: 40px; /* Tăng khoảng cách trên */
+    padding-top: 20px; /* Tăng padding trên */
+    border-top: 1px solid #ccc; /* Thêm đường viền trên */
+  }
+
+  #footer .footer_2 p {
+    font-size: 1.5rem; /* Tăng kích thước chữ bản quyền */
+    line-height: 2; /* Tăng khoảng cách dòng */
+    text-align: center; /* Căn giữa nội dung */
+  }
+
+  #footer .footer_1ism h6 {
+    display: block; /* Đảm bảo mỗi mục chiếm toàn bộ chiều rộng */
+    width: 100%; /* Chiếm toàn bộ chiều rộng container */
+    margin-bottom: 15px; /* Tăng khoảng cách giữa các mục */
+  }
+
+  #footer .footer_1ism h6 a {
+    font-size: 1.5rem; /* Tăng kích thước chữ liên kết */
+    text-align: left; /* Căn trái nội dung liên kết */
+  }
+
+  #footer .footer_1ism h6 i {
+    margin-right: 10px; /* Tăng khoảng cách giữa biểu tượng và nội dung */
+  }
+
+}
+
 
 
 

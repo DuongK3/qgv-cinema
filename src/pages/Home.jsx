@@ -93,7 +93,7 @@ function Home() {
           <div className="col-md-3 col-sm-6">
             <div className="spec_1l text-center">
                 <h1 className="text-white font_50">0</h1>
-              <h6 className="col_brow mb-0 text-uppercase">Tài Khoản Thành Viên</h6>
+              <h6 className="col_brow mb-0 text-uppercase">Tài Khoản</h6>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
@@ -106,7 +106,7 @@ function Home() {
         </div>
         </div>
         </section>
-
+ 
         <section id="serv" className="p_3 bg-dark">
         <div className="container-xl">
             <div className="award_1 row text-center mb-4">
@@ -284,7 +284,7 @@ function Home() {
             <h6 className="mb-0 fw-bold text-uppercase lh-base"> Vy Vy <br/> <span className="col_blue font_14 text-capitalize fw-normal">Thành Viên Cấp 9</span></h6>
             </div>
             <p className="mb-0 mt-3" style={{ textAlign: 'justify' }}>
-              BÚUUUUUUUUUUUUUUUUUUUUUUUU <br/> UUUUUUUUUUUUUUUUUUUUUUUUU
+            BÚUUUUUUUUUUUUUUUUUUUUUUUU <br/> UUUUUUUUUUUUUUUUUUUUUUUUU
             </p>
           </div>  
           </div>
