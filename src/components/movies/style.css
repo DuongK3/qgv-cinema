@@ -1,3 +1,8 @@
+.row.text-center {
+  margin-top: 40px; /* Khoảng cách phía trên */
+  margin-bottom: 40px; /* Khoảng cách phía dưới */
+}
+
 .movie-hero {
     position: relative;
     width: 100%;
@@ -12,7 +17,7 @@
     margin-top: 20px;
     border-radius: 8px;
   }
-  
+
   /* Nền video */
   .movie-bg {
     position: absolute;

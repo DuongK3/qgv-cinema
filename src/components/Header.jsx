@@ -26,11 +26,11 @@ function Header() {
                 
                 <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="/404" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Thành Viên 
+                    Phim
                 </Link>
                 <ul className="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                    <li><Link className="dropdown-item" to="/404">Thành Viên</Link></li>
-                    <li><Link className="dropdown-item border-0" to="/404">Danh Sách Thành Viên</Link></li>
+                    <li><Link className="dropdown-item" to="/404">Danh Sách Phim Đã Chiếu </Link></li>
+                    <li><Link className="dropdown-item border-0" to="/404">Danh Sách Phim Có Restream</Link></li>
                 </ul>
                 </li>
                 

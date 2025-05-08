@@ -119,8 +119,16 @@ const Movie = () => {
   };
 
   return (
-    <div className="movie-hero">
+    <div>
+      <div className="row text-center mb-4">
+        <div className="col-md-12">
+            <h5 className="col_orange">Xem Gì Tại QGV Cinema?</h5>
+          <h1 className="mt-3 mb-0" >Tham Khảo Một Số Bộ Phim Tiêu Biểu</h1>
+        </div>
+      </div>
 
+
+      <div className="movie-hero">
       {/* Background video */}
       <div className="movie-bg">
         <video
@@ -163,7 +171,7 @@ const Movie = () => {
 
       {/* Popular section */}
       <div className="popular-section">
-        <h2 className="popular-title">Những Bộ Phim Từng Được Chiếu</h2>
+        <h2 className="popular-title">Danh Sách Phim Có Restream</h2>
         <div className="popular-list">
           {movies.map((movie, index) => (
             <div
@@ -178,6 +186,8 @@ const Movie = () => {
         </div>
       </div>
     </div>
+  </div>
+    
   );
 };
 

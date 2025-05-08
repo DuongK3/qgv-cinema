@@ -146,13 +146,14 @@
   }
 
    /******************TESTIM****************/
-
+ 
    .carousel-item {
     height: auto; /* Đảm bảo chiều cao tự động */
   }
   
   .carousel-inner {
     height: auto; /* Đảm bảo chiều cao tự động */
+    overflow: visible; /* Hiển thị đầy đủ nội dung */
   }
 
   .p_3 {

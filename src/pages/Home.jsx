@@ -284,7 +284,7 @@ function Home() {
             <h6 className="mb-0 fw-bold text-uppercase lh-base"> Vy Vy <br/> <span className="col_blue font_14 text-capitalize fw-normal">Thành Viên Cấp 9</span></h6>
             </div>
             <p className="mb-0 mt-3" style={{ textAlign: 'justify' }}>
-              BÚUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU <br/> UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+              BÚUUUUUUUUUUUUUUUUUUUUUUUU <br/> UUUUUUUUUUUUUUUUUUUUUUUUU
             </p>
           </div>  
           </div>
