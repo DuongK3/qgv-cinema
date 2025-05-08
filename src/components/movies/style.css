@@ -198,7 +198,7 @@
     color: black;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .movie-hero {
       min-height: 40vh; /* Giữ chiều cao tối thiểu */
       max-height: 50vh; /* Giữ chiều cao tối đa */

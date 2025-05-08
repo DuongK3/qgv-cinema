@@ -103,10 +103,6 @@
   
   /******************SPEC****************/
 
-  #spec .spec_1 {
-    flex-direction: column; /* Hiển thị các mục theo hàng dọc */
-  }
-
   #spec .spec_1 .col-sm-6 {
     margin-bottom: 5px; /* Thêm khoảng cách giữa các mục */
   }
@@ -121,9 +117,7 @@
 
   /******************SERV****************/
 
-  #serv .serv_1 {
-    flex-direction: column; /* Chuyển các mục sang hiển thị theo cột */
-  }
+  
 
   #serv .serv_1 .col-sm-6 {
     margin-bottom: 10px; /* Thêm khoảng cách giữa các mục */
@@ -177,11 +171,6 @@
 
   #footer .footer_m {
     padding: 15px; /* Giảm padding tổng thể */
-  }
-
-  #footer .footer_1 {
-    flex-direction: column; /* Chuyển các cột thành hàng dọc */
-    gap: 20px; /* Tạo khoảng cách giữa các phần */
   }
 
   #footer .footer_1i {
