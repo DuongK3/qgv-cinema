@@ -74,6 +74,8 @@ function Home() {
         </div>
         </section>
 
+        <Movie />
+
         <section id="spec">
         <div className="spec_m bg_back pt-5 pb-5">
           <div className="container-xl">
@@ -179,9 +181,6 @@ function Home() {
             </div>
         </div>
     </section>
-
-
-      <Movie />
 
       <section id="testim" className="p_3 carousel_p">
       <div className="container-xl">

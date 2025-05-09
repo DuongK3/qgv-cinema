@@ -29,8 +29,8 @@ function Header() {
                     Phim
                 </Link>
                 <ul className="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                    <li><Link className="dropdown-item" to="/404">Danh Sách Phim Đã Chiếu </Link></li>
-                    <li><Link className="dropdown-item border-0" to="/404">Danh Sách Phim Có Restream</Link></li>
+                    <li><Link className="dropdown-item" to="/movie-history">Danh Sách Phim Đã Chiếu </Link></li>
+                    <li><Link className="dropdown-item border-0" to="/restream-movies">Danh Sách Phim Có Restream</Link></li>
                 </ul>
                 </li>
                 

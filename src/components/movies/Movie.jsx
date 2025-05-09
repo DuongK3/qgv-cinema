@@ -4,104 +4,19 @@ import './style.css';
 const Movie = () => {
   const movies = [ 
     {
-      title: 'Peaky Blinders',
-      img: '/assets/movies/img/peaky blinders.jpg',
-      video: '/assets/movies/video/peaky blinders.webm',
-      description: 'Một thủ lĩnh tàn nhẫn đứng đầu băng đảng Peaky Blinders, quyết tâm xây dựng đế chế quyền lực giữa lòng nước Anh hậu chiến.',
+      title: 'Coming Soon',
+      img: '/assets/movies/img/coming soon.jpg',
+      video: '/assets/movies/video/coming soon.mp4',
+      description: 'Một nhóm bạn trẻ tìm kiếm một bộ phim kinh dị trong một rạp chiếu phim cũ, nhưng họ không biết rằng họ đang bị theo dõi bởi một kẻ giết người bí ẩn.',
       meta: {
-        label: 'A Netflix Original Film',
-        genres: ['Hành động', 'Tội phạm'],
-        year: 2013,
-        imdb: 8.7,
+        label: 'Chất Lượng 1080p',
+        genres: ['Kinh dị', 'Hồi hợp'],
+        year: 2008,
+        imdb: 6.0,
       },
-    },
-    {
-      title: 'The Void',
-      img: '/assets/movies/img/the void.jpg',
-      video: '/assets/movies/video/the void.mp4',
-      description: 'Một cảnh sát đưa người bị thương đến bệnh viện nông thôn, nơi họ bị bao vây bởi những kẻ cuồng tín mặc áo choàng và đối mặt với những sinh vật kinh hoàng từ chiều không gian khác.',
-      meta: {
-        label: 'Phim kinh dị độc lập',
-        genres: ['Kinh dị', 'Siêu nhiên'],
-        year: 2016,
-        imdb: 5.9,
-      },
-    },
-    {
-      title: 'The Substance',
-      img: '/assets/movies/img/the substance.png',
-      video: '/assets/movies/video/the substance.mp4',
-      description: 'Một nữ ngôi sao dùng loại thuốc tạo ra bản thể trẻ trung của mình, nhưng cái giá phải trả là sự xung đột và kinh hoàng.',
-      meta: {
-        label: 'Body Horror Thriller',
-        genres: ['Kinh dị', 'Châm biếm xã hội'],
-        year: 2024,
-        imdb: 7,
-      },
-    },
-    {
-      title: 'Under The Skin',
-      img: '/assets/movies/img/under the skin.jpg',
-      video: '/assets/movies/video/under the skin.mp4',
-      description: 'Một câu chuyện kỳ bí về sự tồn tại và bản chất con người.',
-      meta: {
-        label: 'Sci-Fi Masterpiece',
-        genres: ['Khoa học viễn tưởng', 'Kinh dị'],
-        year: 2014,
-        imdb: 6.3,
-      },
-      
-    },
-
-    {
-      title: 'Shangri-La Frontier',
-      img: '/assets/movies/img/shangri-la frontier.jpg',
-      video: '/assets/movies/video/shangri.mp4',
-      description: 'Game thủ Rakuro khám phá thế giới game VR đỉnh cao Shangri-La Frontier, nơi kỹ năng và chiến lược được đặt lên hàng đầu.',
-      meta: {
-        label: 'Anime Series',
-        genres: ['Hành động', 'Phiêu lưu', 'Game'],
-        year: 2023,
-        imdb: 8.1,
-      },
-    },
-    {
-      title: 'Steins;Gate',
-      img: '/assets/movies/img/Steins;Gate.jpg',
-      video: '/assets/movies/video/steingate.mp4',
-      description: 'Một nhóm bạn phát hiện cách gửi tin nhắn về quá khứ, dẫn đến những hệ quả nghiêm trọng và hành trình du hành thời gian đầy kịch tính.',
-      meta: {
-        label: 'White Fox Anime',
-        genres: ['Khoa học viễn tưởng', 'Tâm lý'],
-        year: 2011,
-        imdb: 8.8,
-      },
-    },
-    {
-      title: 'The Medium',
-      img: '/assets/movies/img/the medium.jpg',
-      video: '/assets/movies/video/the medium.mp4',
-      description: 'Một bà đồng tại Thái Lan và đoàn làm phim tài liệu đối mặt với thế lực tà ác khi cháu gái bà có biểu hiện bị quỷ ám.',
-      meta: {
-        label: 'Thai Horror Film',
-        genres: ['Kinh dị', 'Giả tài liệu'],
-        year: 2021,
-        imdb: 6.5,
-      },
+      link: 'https://drive.google.com/file/d/1NSM2NvIDvCUUWdl8AxqFV1Dw2sKL4wpW/view?usp=sharing',
     },
     
-    {
-      title: 'The Hunger Games',
-      img: '/assets/movies/img/hunger games.jpg',
-      video: '/assets/movies/video/hunger games.mp4',
-      description: 'Katniss Everdeen tình nguyện tham gia Đấu Trường Sinh Tử để cứu em gái, trở thành biểu tượng cuộc nổi dậy tại quốc gia Panem hậu tận thế.',
-      meta: {
-        label: 'Lionsgate Film',
-        genres: ['Hành động', 'Khoa học viễn tưởng'],
-        year: 2012,
-        imdb: 7.2,
-      },
-    },
     
     
     
@@ -161,17 +76,25 @@ const Movie = () => {
           <span className="meta-score">{currentMovie.meta.imdb}</span>
         </div>
         <div className="movie-buttons">
-          <button className="btn btn-watch">▶ Xem</button>
+          <a
+            href={currentMovie.link}
+            className="btn btn-watch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ▶ Xem
+          </a>
           <button className="btn btn-rate">Đánh giá</button>
           <button className="btn btn-mute" onClick={toggleMute}>
             {isMuted ? '🔇' : '🔊'}
           </button>
         </div>
+
       </div>
 
       {/* Popular section */}
       <div className="popular-section">
-        <h2 className="popular-title">Danh Sách Phim Có Restream</h2>
+        <h2 className="popular-title">Một Số Bộ Phim Được Xem Gần Đây</h2>
         <div className="popular-list">
           {movies.map((movie, index) => ( 
             <div 
