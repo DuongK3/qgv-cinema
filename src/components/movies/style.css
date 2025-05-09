@@ -337,7 +337,7 @@
       width: 100%;
       max-width: 85%;
       margin: auto;
-      min-height: 80vh;
+      min-height: 90vh;
       font-family: 'Segoe UI', sans-serif;
       color: white;
       overflow-x: hidden;
@@ -473,12 +473,12 @@
       margin-top: 10px; /* Tăng khoảng cách trên */
       text-align: center;
       min-width: 250px;
-      margin-left: 25px;
+      
     }
     
     .popular-item img { 
-      width: 150%;
-      height: 400px;
+      width: 100%;
+      height: 550px;
       object-fit: cover;
       border-radius: 10px;
       transition: transform 0.3s ease;
