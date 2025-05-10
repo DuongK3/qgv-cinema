@@ -27,7 +27,7 @@ const Movie = () => {
         year: 2016,
         imdb: 5.9,
       },
-      link: null,
+      link: "https://drive.google.com/file/d/1vvZU8oA6g-T_LMFzyHSZ7L-VRtD5ULfw/view?usp=sharing",
     },
     {
       title: 'Under The Skin',

@@ -17,7 +17,7 @@ const moviesData = [
     description: "Một cảnh sát đưa người bị thương đến bệnh viện nông thôn, nơi họ bị bao vây bởi những kẻ cuồng tín mặc áo choàng và đối mặt với những sinh vật kinh hoàng từ chiều không gian khác.",
     imdb: 5.9,
     image: "/assets/movies/img/the void.jpg",
-    link: null
+    link: "https://drive.google.com/file/d/1vvZU8oA6g-T_LMFzyHSZ7L-VRtD5ULfw/view?usp=sharing"
   },
 
   
