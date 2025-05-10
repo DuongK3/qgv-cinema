@@ -9,7 +9,15 @@ const moviesData = [
     description: "Một nhóm bạn trẻ tìm kiếm một bộ phim kinh dị trong một rạp chiếu phim cũ, nhưng họ không biết rằng họ đang bị theo dõi bởi một kẻ giết người bí ẩn.",
     imdb: 6.0,
     image: "/assets/movies/img/coming soon.jpg",
-    link: "https://drive.google.com/file/d/1NSM2NvIDvCUUWdl8AxqFV1Dw2sKL4wpW/view?usp=sharing"
+    link: "https://drive.google.com/file/d/1VHSaAtJow9A-5X_20K9QQQVzMKdLGvXS/view?usp=sharing"
+  },
+  {
+    id:2,
+    title: "The Void",
+    description: "Một cảnh sát đưa người bị thương đến bệnh viện nông thôn, nơi họ bị bao vây bởi những kẻ cuồng tín mặc áo choàng và đối mặt với những sinh vật kinh hoàng từ chiều không gian khác.",
+    imdb: 5.9,
+    image: "/assets/movies/img/the void.jpg",
+    link: null
   },
 
   
